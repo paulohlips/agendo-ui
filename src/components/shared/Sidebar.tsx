@@ -4,9 +4,9 @@ import {
   IconLayoutDashboard,
   IconLogout,
   IconSettings,
-} from '@tabler/icons-react';
-import React from 'react';
-import styles from './Sidebar.module.css';
+} from "@tabler/icons-react";
+import React from "react";
+import styles from "./Sidebar.module.css";
 
 interface SidebarProps {
   activeTab: string;
@@ -15,16 +15,16 @@ interface SidebarProps {
 
 export function Sidebar({ activeTab, onTabChange }: SidebarProps) {
   const menuItems = [
-    { id: 'dashboard', label: 'Dashboard', icon: IconLayoutDashboard },
-    { id: 'calendar', label: 'Calendar', icon: IconCalendar },
-    { id: 'appointments', label: 'Appointments', icon: IconClipboardList },
-    { id: 'settings', label: 'Settings', icon: IconSettings },
+    { id: "dashboard", label: "Dashboard", icon: IconLayoutDashboard },
+    { id: "calendar", label: "Calendar", icon: IconCalendar },
+    { id: "appointments", label: "Appointments", icon: IconClipboardList },
+    { id: "settings", label: "Settings", icon: IconSettings },
   ];
 
   return (
     <div className={styles.sidebar}>
       <div className={styles.header}>
-        <h2 className={styles.logo}>SchedulePro</h2>
+        <h2 className={styles.logo}>AgendoPro</h2>
       </div>
 
       <nav className={styles.nav}>
@@ -36,7 +36,7 @@ export function Sidebar({ activeTab, onTabChange }: SidebarProps) {
             <button
               key={item.id}
               onClick={() => onTabChange(item.id)}
-              className={`${styles.menuItem} ${isActive ? styles.active : ''}`}
+              className={`${styles.menuItem} ${isActive ? styles.active : ""}`}
             >
               <Icon className={styles.menuIcon} stroke={1.5} />
               <span>{item.label}</span>
