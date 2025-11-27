@@ -1,0 +1,108 @@
+:root {
+  /* ========================================
+     WHITE / GREY / BLACK PALETTE
+     ======================================== */
+
+  /* Pure White */
+  --color-white: #ffffff;
+
+  /* Very Light Greys */
+  --color-grey-50: #f8fafc;   /* Main background */
+  --color-grey-100: #f1f5f9;  /* Light backgrounds */
+  --color-grey-200: #e2e8f0;  /* Borders, dividers */
+  --color-grey-300: #cbd5e1;  /* Subtle borders */
+
+  /* Medium Greys */
+  --color-grey-400: #94a3b8;  /* Placeholder text */
+  --color-grey-500: #64748b;  /* Secondary text */
+  --color-grey-600: #475569;  /* Medium text */
+  --color-grey-700: #334155;  /* Primary text */
+
+  /* Dark Greys */
+  --color-grey-800: #1e293b;  /* Dark text */
+  --color-grey-900: #0f172a;  /* Almost black */
+
+  /* Additional Greys */
+  --color-grey-50-alt: #f9fafb;   /* Alternative light */
+  --color-grey-100-alt: #f3f4f6;  /* Component backgrounds */
+  --color-grey-200-alt: #e5e7eb;  /* Card borders */
+  --color-grey-300-alt: #d1d5db;  /* Input borders */
+  --color-grey-400-alt: #9ca3af;  /* Disabled states */
+  --color-grey-500-alt: #6b7280;  /* Icons, muted text */
+  --color-grey-600-alt: #374151;  /* Label text */
+
+  /* ========================================
+     BLUE PALETTE
+     ======================================== */
+
+  /* Very Light Blues */
+  --color-blue-50: #eff6ff;   /* Background accents */
+  --color-blue-100: #eef2ff;  /* Light backgrounds */
+  --color-blue-200: #c7d2fe;  /* Hover states, borders */
+  --color-blue-300: #a5b4fc;  /* Active states */
+
+  /* Primary Blue */
+  --color-blue-600: #4f46e5;  /* Primary color */
+  --color-blue-700: #4338ca;  /* Hover color */
+  --color-blue-800: #312e81;  /* Dark text on blue */
+  --color-blue-900: #2563eb;  /* Alternative blue */
+
+  /* ========================================
+     PURPLE PALETTE
+     ======================================== */
+
+  /* Very Light Purples */
+  --color-purple-50: #faf5ff;   /* Background accents */
+  --color-purple-100: #f3e8ff;  /* Light backgrounds */
+
+  /* Primary Purple */
+  --color-purple-600: #9333ea;  /* Primary purple */
+
+  /* ========================================
+     SEMANTIC COLORS (Success, Warning, Error)
+     ======================================== */
+
+  /* Success Colors */
+  --color-success-50: #f0fdf4;   /* Success background */
+  --color-success-100: #dcfce7;  /* Success light background */
+  --color-success-600: #16a34a;  /* Success color */
+  --color-success-700: #166534;  /* Success dark */
+
+  /* Warning Colors */
+  --color-warning-50: #fff7ed;   /* Warning background */
+  --color-warning-100: #fef3c7;  /* Warning light background */
+  --color-warning-600: #ea580c;  /* Warning color */
+  --color-warning-700: #92400e;  /* Warning dark */
+
+  /* Error Colors */
+  --color-error-50: #fef2f2;     /* Error background */
+  --color-error-100: #fee2e2;   /* Error light background */
+  --color-error-600: #dc2626;   /* Error color */
+  --color-error-700: #b91c1c;   /* Error dark */
+  --color-error-800: #991b1b;   /* Error very dark */
+
+  /* Yellow (for ratings/stars) */
+  --color-yellow-400: #facc15;  /* Star rating color */
+
+  /* ========================================
+     SPECIALTY COLORS
+     ======================================== */
+
+  /* Focus ring color */
+  --color-focus-ring: rgba(79, 70, 229, 0.1);
+
+  /* Shadow colors */
+  --color-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --color-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  --color-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+
+  /* ========================================
+     GRADIENTS
+     ======================================== */
+
+  /* Primary gradient for special elements */
+  --gradient-primary: linear-gradient(135deg, var(--color-blue-600) 0%, var(--color-blue-700) 100%);
+
+  /* Background gradient for login page */
+  --gradient-background: linear-gradient(135deg, var(--color-blue-100) 0%, var(--color-white) 50%, var(--color-purple-50) 100%);
+}

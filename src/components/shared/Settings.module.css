@@ -1,0 +1,204 @@
+.container {
+  padding: 2rem;
+  background: var(--color-grey-50);
+  min-height: 100vh;
+}
+
+.header {
+  margin-bottom: 1.5rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-grey-900);
+  margin-bottom: 0.25rem;
+}
+
+.subtitle {
+  color: var(--color-grey-500);
+  font-size: 1rem;
+}
+
+.section {
+  margin-bottom: 1.5rem;
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.iconWrapper {
+  padding: 0.5rem;
+  background: var(--color-blue-100);
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-blue-600);
+}
+
+.sectionHeader h3 {
+  margin: 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.workingDaysLabel {
+  display: block;
+  margin-bottom: 0.75rem;
+  color: var(--color-grey-700);
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+.daysGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.dayButton {
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--color-grey-200);
+  border-radius: 0.5rem;
+  background: white;
+  cursor: pointer;
+  color: var(--color-grey-500);
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.dayButton:hover {
+  border-color: var(--color-grey-300);
+}
+
+.dayButton.active {
+  border-color: var(--color-blue-600);
+  background: var(--color-blue-100);
+  color: var(--color-blue-800);
+}
+
+.timeGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.notificationsList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.notificationItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid var(--color-grey-200);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.notificationItem:hover {
+  background: var(--color-grey-50);
+}
+
+.notificationText {
+  flex: 1;
+}
+
+.notificationTitle {
+  font-weight: 500;
+  color: var(--color-grey-900);
+  margin-bottom: 0.25rem;
+}
+
+.notificationDescription {
+  color: var(--color-grey-500);
+  font-size: 0.875rem;
+}
+
+.paper {
+  background: white;
+  border: 1px solid var(--color-grey-200-alt);
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px 0 var(--color-shadow-md);
+  padding: 1.5rem;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.inputLabel {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-grey-600-alt);
+}
+
+.input {
+  padding: 0.75rem;
+  border: 1px solid var(--color-grey-300-alt);
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--color-blue-600);
+  box-shadow: 0 0 0 3px var(--color-focus-ring);
+}
+
+.select {
+  padding: 0.75rem;
+  border: 1px solid var(--color-grey-300-alt);
+  border-radius: 0.375rem;
+  background: white;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.select:focus {
+  outline: none;
+  border-color: var(--color-blue-600);
+  box-shadow: 0 0 0 3px var(--color-focus-ring);
+}
+
+.button {
+  padding: 0.75rem 1.5rem;
+  background: var(--color-blue-600);
+  color: white;
+  border: none;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.button:hover {
+  background: var(--color-blue-700);
+}
+
+.checkbox {
+  width: 1rem;
+  height: 1rem;
+  accent-color: var(--color-blue-600);
+}

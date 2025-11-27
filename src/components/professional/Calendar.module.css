@@ -1,0 +1,338 @@
+.container {
+  padding: 2rem;
+  background: var(--color-grey-50);
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.headerText h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-grey-900);
+  margin-bottom: 0.25rem;
+}
+
+.subtitle {
+  color: var(--color-grey-500);
+  font-size: 1rem;
+}
+
+.headerActions {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.calendarHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--color-grey-200);
+}
+
+.calendarHeader h3 {
+  margin: 0;
+}
+
+.navigationButtons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.calendarGrid {
+  overflow-x: auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 100px repeat(7, 1fr);
+  gap: 0.5rem;
+  min-width: 900px;
+}
+
+.dayHeader {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.dayName {
+  color: var(--color-grey-500);
+  font-size: 0.875rem;
+  margin-bottom: 0.25rem;
+}
+
+.dayDate {
+  color: var(--color-grey-900);
+  font-weight: 500;
+}
+
+.timeLabel {
+  text-align: right;
+  padding: 0.75rem 1rem 0.75rem 0;
+  color: var(--color-grey-500);
+  font-size: 0.875rem;
+}
+
+.timeSlot {
+  min-height: 80px;
+  padding: 0.75rem;
+  border: 2px solid var(--color-grey-200);
+  border-radius: 0.5rem;
+  transition: all 0.2s;
+  cursor: pointer;
+  background: white;
+}
+
+.timeSlot:hover {
+  border-color: var(--color-blue-200);
+  background: var(--color-purple-50);
+}
+
+.timeSlot.occupied {
+  background: var(--color-blue-100);
+  border-color: var(--color-blue-200);
+  color: var(--color-blue-800);
+  cursor: pointer;
+}
+
+.timeSlot.occupied:hover {
+  border-color: var(--color-blue-300);
+}
+
+.timeSlot.blocked {
+  background: var(--color-grey-100);
+  border-color: var(--color-grey-300);
+  color: var(--color-grey-500);
+  cursor: not-allowed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slotContent {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.clientName {
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+.appointmentType {
+  color: var(--color-blue-600);
+  font-size: 0.8125rem;
+}
+
+.legend {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--color-grey-200);
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.legendBox {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 0.25rem;
+  border: 2px solid;
+}
+
+.legendAvailable {
+  background: white;
+  border-color: var(--color-grey-200);
+}
+
+.legendOccupied {
+  background: var(--color-blue-100);
+  border-color: var(--color-blue-200);
+}
+
+.legendBlocked {
+  background: var(--color-grey-100);
+  border-color: var(--color-grey-300);
+}
+
+.legendLabel {
+  color: var(--color-grey-500);
+  font-size: 0.875rem;
+}
+
+.modalSection {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: var(--color-grey-50);
+  border-radius: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.modalIcon {
+  color: var(--color-grey-500);
+  flex-shrink: 0;
+}
+
+.modalLabel {
+  color: var(--color-grey-500);
+  font-size: 0.875rem;
+  margin-bottom: 0.25rem;
+}
+
+.modalValue {
+  color: var(--color-grey-900);
+  font-weight: 500;
+}
+
+.modalActions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.paper {
+  background: white;
+  border: 1px solid var(--color-grey-200-alt);
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px 0 var(--color-shadow-md);
+  padding: 1.5rem;
+}
+
+.outlineButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--color-grey-300-alt);
+  border-radius: 0.375rem;
+  background: white;
+  color: var(--color-grey-600-alt);
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.outlineButton:hover {
+  background: var(--color-grey-50-alt);
+}
+
+.primaryButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: var(--color-blue-600);
+  color: white;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.primaryButton:hover {
+  background: var(--color-blue-700);
+}
+
+.navButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  border: 1px solid var(--color-grey-300-alt);
+  border-radius: 0.375rem;
+  background: white;
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.navButton:hover {
+  background: var(--color-grey-50-alt);
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: white;
+  border-radius: 0.5rem;
+  max-width: 28rem;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  border-bottom: 1px solid var(--color-grey-200-alt);
+}
+
+.modalHeader h3 {
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--color-grey-500-alt);
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.closeButton:hover {
+  background: var(--color-grey-100-alt);
+}
+
+.modalContent {
+  padding: 1.5rem;
+}
+
+.dangerButton {
+  flex: 1;
+  padding: 0.75rem;
+  background: var(--color-error-600);
+  color: white;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.dangerButton:hover {
+  background: var(--color-error-700);
+}
